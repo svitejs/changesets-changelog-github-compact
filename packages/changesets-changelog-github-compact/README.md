@@ -30,9 +30,10 @@ set changelog in your `.changeset/config.json` to
 ## additional features
 
 ### auto-links in changeset descriptions
-If you use `see #123`,`#fix 123` or `fixes #123` in a changeset description, the `#123`will automatically be linkified to the corrosponding issue in your repo
+If you use `(see #123)`,`(fix #123)` or `(fixes #123)` in a changeset description, the `#123`will automatically be linkified to the corrosponding issue in your repo
 
-
+example:
+- some description (fixes [#123](#)) cool, huh? ([PR](#))
 ## License
 
 [MIT](./LICENSE)
