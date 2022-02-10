@@ -1,0 +1,57 @@
+{
+  "name": "changesets-changelog-github-compact-monorepo",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm --dir packages/changesets-changelog-github-compact dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test --workspace-concurrency=1",
+    "lint": "eslint --ignore-path .gitignore '**/*.{js,ts}'",
+    "lint:fix": "pnpm run lint -- --fix",
+    "format": "prettier --ignore-path .gitignore '**/*.{js,ts}' --check",
+    "format:fix": "pnpm run format -- --write",
+    "fixup": "run-s lint:fix format:fix",
+    "release": "pnpm run build && pnpm changeset publish",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.20.0",
+    "@changesets/get-github-info": "^0.5.0",
+    "@types/node": "^16.11.22",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "tsm": "^2.2.1",
+    "tsup": "^5.11.13",
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm",
+  "engines": {
+    "pnpm": "^6.7.0",
+    "yarn": "forbidden, use pnpm",
+    "npm": "forbidden, use pnpm",
+    "node": "^12.20 || ^14.13.1 || >= 16"
+  },
+  "pnpm": {
+    "overrides": {
+      "@svitejs/changesets-changelog-github-compact": "workspace:*",
+      "ansi-regex@>2.1.1 <5.0.1": "^5.0.1"
+    }
+  }
+}
