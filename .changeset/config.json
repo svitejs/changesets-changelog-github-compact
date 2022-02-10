@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.5.0/schema.json",
-  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "svitejs/changesets-changelog-github-compact" }],
+  "changelog": ["../packages/changesets-changelog-github-compact/dist/index.cjs", { "repo": "svitejs/changesets-changelog-github-compact" }],
   "commit": false,
   "linked": [],
   "access": "public",

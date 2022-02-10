@@ -14,7 +14,6 @@ set changelog in your `.changeset/config.json` to
 ```json
 "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "org/repo" }]
 ```
-[example](../../.changeset/config.json)
 
 ## comparison
 
