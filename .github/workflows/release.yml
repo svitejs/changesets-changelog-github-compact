@@ -32,9 +32,10 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
       - name: install
-        run: |
-          pnpm install --frozen-lockfile --prefer-offline --ignore-scripts
-
+        run: pnpm install --frozen-lockfile --prefer-offline --ignore-scripts
+      # build it because it uses itself to generate the changelog
+      - name: build
+        run: pnpm build
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
