@@ -9,12 +9,10 @@ importers:
   .:
     specifiers:
       '@changesets/cli': ^2.20.0
-      '@changesets/get-github-info': ^0.5.0
       '@types/node': ^16.11.22
       '@typescript-eslint/eslint-plugin': ^5.10.2
       '@typescript-eslint/parser': ^5.10.2
       cross-env: ^7.0.3
-      dotenv: ^16.0.0
       eslint: ^8.8.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-node: ^11.1.0
@@ -29,12 +27,10 @@ importers:
       typescript: ^4.5.5
     devDependencies:
       '@changesets/cli': 2.20.0
-      '@changesets/get-github-info': 0.5.0
       '@types/node': 16.11.24
       '@typescript-eslint/eslint-plugin': 5.11.0_de5a1ddccd75ca1e499b8b8491d3dcba
       '@typescript-eslint/parser': 5.11.0_eslint@8.8.0+typescript@4.5.5
       cross-env: 7.0.3
-      dotenv: 16.0.0
       eslint: 8.8.0
       eslint-config-prettier: 8.3.0_eslint@8.8.0
       eslint-plugin-node: 11.1.0_eslint@8.8.0
@@ -57,10 +53,10 @@ importers:
       vitest: ^0.3.2
     dependencies:
       '@changesets/get-github-info': 0.5.0
-      '@changesets/types': 4.0.2
       dotenv: 16.0.0
     devDependencies:
       '@changesets/parse': 0.3.11
+      '@changesets/types': 4.0.2
       vitest: 0.3.2
 
 packages:
@@ -193,6 +189,7 @@ packages:
       node-fetch: 2.6.7
     transitivePeerDependencies:
       - encoding
+    dev: false
 
   /@changesets/get-release-plan/3.0.5:
     resolution: {integrity: sha512-67td3LA1RTJpY5Q+wJaTTRtAjZ2suAhDfj3VRjFv0gCgUPXs8rNx17n9UPbegPTQjeTS1r7hVRVifycmT0fQtA==}
@@ -259,6 +256,7 @@ packages:
 
   /@changesets/types/4.0.2:
     resolution: {integrity: sha512-OeDaB7D+WVy/ErymPzFm58IeGvz4DOl+oedyZETfnkfMezF/Uhrm1Ub6MHrO5LcAaQTW+ptDmr0fmaVyoTxgHw==}
+    dev: true
 
   /@changesets/write/0.1.6:
     resolution: {integrity: sha512-JWE2gJs9eHhorxqembkf43fllKlCz+sp1TJKSheaWfhWILMHPdfa/xQG4+sMZkISo1qZ+IlJyiBLha6iGGjXyA==}
@@ -904,6 +902,7 @@ packages:
 
   /dataloader/1.4.0:
     resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: false
 
   /debug/4.3.3:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
@@ -989,6 +988,7 @@ packages:
   /dotenv/16.0.0:
     resolution: {integrity: sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==}
     engines: {node: '>=12'}
+    dev: false
 
   /eastasianwidth/0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -2252,6 +2252,7 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
+    dev: false
 
   /normalize-package-data/2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
@@ -3039,6 +3040,7 @@ packages:
 
   /tr46/0.0.3:
     resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    dev: false
 
   /tree-kill/1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
@@ -3260,12 +3262,14 @@ packages:
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    dev: false
 
   /whatwg-url/5.0.0:
     resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
+    dev: false
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
