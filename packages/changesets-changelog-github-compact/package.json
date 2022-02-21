@@ -36,8 +36,8 @@
     "dotenv": "^16.0.0"
   },
   "devDependencies": {
-    "@changesets/parse": "^0.3.11",
-    "@changesets/types": "^4.0.2",
-    "vitest": "^0.3.4"
+    "@changesets/parse": "^0.3.12",
+    "@changesets/types": "^4.1.0",
+    "vitest": "^0.4.2"
   }
 }
