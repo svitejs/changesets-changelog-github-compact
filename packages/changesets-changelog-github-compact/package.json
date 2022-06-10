@@ -38,6 +38,6 @@
   "devDependencies": {
     "@changesets/parse": "^0.3.13",
     "@changesets/types": "^5.0.0",
-    "vitest": "^0.13.1"
+    "vitest": "^0.14.1"
   }
 }
