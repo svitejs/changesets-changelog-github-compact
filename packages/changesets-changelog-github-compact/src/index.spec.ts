@@ -82,13 +82,13 @@ describe.each([data.commit, 'wrongcommit', undefined])(
 							commitFromChangeset
 						)
 					)
-				).toEqual(`\n\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
+				).toEqual(`\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
 			});
 		});
 		test('override commit with commit keyword', async () => {
 			expect(
 				await getReleaseLine(...getChangeset(`commit: ${data.commit}`, commitFromChangeset))
-			).toEqual(`\n\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
+			).toEqual(`\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
 		});
 	}
 );
@@ -99,7 +99,7 @@ describe.each(['author', 'user'])('override author with %s keyword', (keyword) =
 			await getReleaseLine(
 				...getChangeset(`${keyword}: ${kind === 'with @' ? '@' : ''}other`, data.commit)
 			)
-		).toEqual(`\n\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
+		).toEqual(`\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
 	});
 });
 
@@ -108,5 +108,5 @@ it('with multiple authors', async () => {
 		await getReleaseLine(
 			...getChangeset(['author: @Andarist', 'author: @mitchellhamilton'].join('\n'), data.commit)
 		)
-	).toEqual(`\n\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
+	).toEqual(`\n- something ([#1613](https://github.com/emotion-js/emotion/pull/1613))\n`);
 });
