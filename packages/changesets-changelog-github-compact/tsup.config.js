@@ -6,5 +6,6 @@ export const tsup = {
 	splitting: false,
 	clean: true,
 	shims: true,
+	dts: true,
 	target: 'node14.13.1'
 };
