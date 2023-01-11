@@ -100,7 +100,7 @@ const changelogFunctions: ChangelogFunctions = {
 		// only link PR or merge commit not both
 		const suffix = links.pull ? ` (${links.pull})` : links.commit ? ` (${links.commit})` : '';
 
-		return `\n\n- ${firstLine}${suffix}\n${futureLines.map((l) => `  ${l}`).join('\n')}`;
+		return `\n- ${firstLine}${suffix}\n${futureLines.map((l) => `  ${l}`).join('\n')}`;
 	}
 };
 
