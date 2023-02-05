@@ -1,10 +1,6 @@
 import { vi, describe, test, it, expect } from 'vitest';
 import changelogFunctions from './index';
-// parse package has a strange cjs/esm setup and vitest defaults changed in 0.26
-// use this workaround instead of adding extra config
-import parse_module from '@changesets/parse';
-// @ts-expect-error
-const parse = parse_module.default;
+import parse from '@changesets/parse';
 
 const getReleaseLine = changelogFunctions.getReleaseLine;
 
