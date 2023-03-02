@@ -1,18 +1,8 @@
 {
-	"extends": ["config:base","group:allNonMajor",":semanticCommits"],
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["github>svitejs/renovate-config"],
 	"schedule": ["before 5am on the 3rd day of the month"],
-  "labels": ["dependencies"],
-  "pin": false,
-  "rangeStrategy": "bump",
-  "node": false,
-  "packageRules": [
-    {
-      "depTypeList": ["peerDependencies"],
-      "enabled": false
-    }
-  ],
-  "ignoreDeps": [
-    // add deps that need manual attention here
-		"pnpm"
-  ]
+	"lockFileMaintenance": {
+		"schedule": ["before 5am on the 3rd day of the month"]
+	}
 }
