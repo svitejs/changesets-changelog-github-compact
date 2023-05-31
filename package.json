@@ -39,7 +39,7 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@7.32.2",
+  "packageManager": "pnpm@8.6.0",
   "engines": {
     "pnpm": "^7.11.0",
     "yarn": "forbidden, use pnpm",
