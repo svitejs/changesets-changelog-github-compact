@@ -77,7 +77,10 @@ const changelogFunctions: ChangelogFunctions = {
 				if (commitFromSummary) {
 					links = {
 						...links,
-						commit: `[\`${commitFromSummary}\`](https://github.com/${repo}/commit/${commitFromSummary})`
+						commit: `[\`${commitFromSummary.slice(
+							0,
+							7
+						)}\`](https://github.com/${repo}/commit/${commitFromSummary})`
 					};
 				}
 				return links;
