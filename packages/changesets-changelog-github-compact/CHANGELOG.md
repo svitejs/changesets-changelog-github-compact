@@ -1,5 +1,11 @@
 # @svitejs/changesets-changelog-github-compact
 
+## 1.2.0
+
+### Minor Changes
+
+- Use short hash in generated labels for same repo commits ([#56](https://github.com/svitejs/changesets-changelog-github-compact/pull/56))
+
 ## 1.1.0
 
 ### Minor Changes
